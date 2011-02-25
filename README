@@ -2,6 +2,9 @@ RINFI Ruby Interactive Fiction
 
 A small library and test application for writing interactive fiction in Ruby.
  
+Prerequisites:
+Yard is used for documentation. 
+ 
 
 Copyright (C) 2011 by beoran@rubyforge.org
 
