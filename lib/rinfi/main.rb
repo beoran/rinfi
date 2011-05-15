@@ -10,10 +10,21 @@ module Rinfi
     end
     
     def setup_world(world)
-      world.action('quit') do 
+      world.action('quit') do |*args| 
+        p args
         quit! 
         say "Bye bye!"
       end 
+      world.action('room') do |*args|
+        name   = args[1] 
+        detail = args[2]
+        if name 
+          self.room(name, detail) 
+          puts "Created room #{name}."
+        else
+          puts "Create which room?"
+        end
+      end
     end
     
     def readline(prompt="\n>")
