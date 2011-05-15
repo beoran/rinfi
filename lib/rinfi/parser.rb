@@ -1,4 +1,20 @@
 require 'parselet'
+=begin 
+  A door is a thing.
+  A color is a quality.
+  Color can be red.
+  Visible can only be true or false.
+  A door has a color.
+  Open can only be true or false.
+  A door can be open.
+  To open a door make the door's open true.
+  To close a door make the door's open false.
+  To open something make it's open true.
+  To close something make it's open false.
+  
+
+=end
+
 
 module Rinfi
   class Parser < Parselet::Parser
