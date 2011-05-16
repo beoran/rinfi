@@ -102,7 +102,7 @@ module Rinfi
     end
     
     rule :number do
-      match([0-9]).repeat(1)
+      match(['0-9']).repeat(1).as(:number)
     end
     
     rule :plain_word do

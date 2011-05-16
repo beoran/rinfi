@@ -38,6 +38,7 @@ assert { parse :ws                  , "
 assert { noparse :ws                , "Hello"         }
 assert { noparse :ws                , "n"             }
 assert { noparse :ws                , "t"             }
+assert { parse(:number              , "0123")        }
 assert { parse(:word                , "hello")        }
 assert { noparse :word              , "   "           }
 assert { noparse(:word              , "hello world")  }
@@ -73,7 +74,7 @@ too"
 And it goes on here in another paragraph.
 (And there is comment)
 
-The door's size is 10 .
+The door's size is 10.
 }
 end
 
